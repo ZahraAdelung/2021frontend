@@ -181,12 +181,14 @@ iframe {
   height: 300px;
 }
 
-// nav.menu-btn {
-//   display: block;
-// }
+nav.menu-btn {
+  display: block;
+}
 
 nav {
   position: fixed;
+  z-index: 999;
+
   background: #1e1f26;
   right: 0;
   top: 0;
