@@ -93,7 +93,7 @@ section {
 
 .hero-img {
   margin-top: 3em;
-  width: 90%;
+  width: 60%;
 }
 
 section.features-section {
@@ -116,9 +116,8 @@ ul.features-list {
 }
 
 ul.features-list li {
-  font-size: 20px;
-  margin-bottom: 1em;
-  margin-left: 2em;
+  font-size: 1.1em;
+  margin: auto 1em 1em 2em;
   position: relative;
 }
 
@@ -168,7 +167,7 @@ textarea {
   margin-bottom: 1.5em;
   margin-top: 0;
   width: 100%;
-  border: 1px solid #686868;
+  border: 1px solid #dfdfdf;
   padding: 0.8em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,6 +282,108 @@ nav li a:hover {
   li.go-premium-cta a:hover {
     background: var(--primary-color);
     color: white;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .left-col {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero-img {
+    width: 30%;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  ul.features-list {
+    display: block;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section {
+    position: relative;
+  }
+  .features-section .container img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    width: 350px;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 2em 0.5em 0 0.5em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-section .contact-right {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 52%;
+    height: 100%;
+  }
+  .contact-section h2 {
+    margin-top: 0;
+  }
+  iframe {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../images/dots.svg") no-repeat;
+    left: 2em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

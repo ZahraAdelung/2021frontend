@@ -89,12 +89,13 @@ section {
 }
 .hero-img {
   margin-top: 3em;
-  width: 90%;
+  width: 60%;
 }
 
 section.features-section {
   background: #20272e;
   color: white;
+
   img {
     display: none;
   }
@@ -108,9 +109,8 @@ ul.features-list {
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
   li {
-    font-size: 20px;
-    margin-bottom: 1em;
-    margin-left: 2em;
+    font-size: 1.1em;
+    margin: auto 1em 1em 2em;
     position: relative;
 
     &:before {
@@ -160,7 +160,7 @@ textarea {
   margin-bottom: 1.5em;
   margin-top: 0;
   width: 100%;
-  border: 1px solid rgb(104, 104, 104);
+  border: 1px solid #dfdfdf;
   padding: 0.8em;
   box-sizing: border-box;
 }
@@ -274,6 +274,107 @@ nav {
     &:hover {
       background: var(--primary-color);
       color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .left-col {
+    padding: 10em 4em;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 30%;
+  }
+
+  .hero-cta {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul.features-list {
+    display: block;
+
+    li {
+      font-size: 1.4em;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .features-section {
+    position: relative;
+  }
+  .features-section .container img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    width: 350px;
+  }
+
+  .testimonials-section ul {
+    display: flex;
+    li {
+      margin: 2em 0.5em 0 0.5em;
+    }
+  }
+  .contact-section {
+    position: relative;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact-right {
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 52%;
+      height: 100%;
+    }
+  }
+  .contact-section h2 {
+    margin-top: 0;
+  }
+  iframe {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .features-section {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 20em;
+      background: var(--primary-color);
+      left: 0;
+      top: -4em;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 20em;
+      background: url("../images/dots.svg") no-repeat;
+      left: 2em;
+      top: 2em;
     }
   }
 }
