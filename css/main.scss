@@ -220,3 +220,58 @@ nav {
   cursor: pointer;
   margin: 0.5em;
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-menu,
+  .exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  nav {
+    display: flex;
+    background: none;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: unset;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+
+    li {
+      a {
+        font-size: 1em;
+
+        color: black;
+        padding: 0em 0.8em;
+      }
+    }
+  }
+  li.current a {
+    font-weight: bold;
+  }
+
+  li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 5em;
+    font-weight: bold;
+    margin-top: -0.2em;
+
+    &:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+}
