@@ -104,6 +104,8 @@ ul.features-list {
   font-weight: 400;
   padding-left: 0.1em;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
   li {
     font-size: 20px;
